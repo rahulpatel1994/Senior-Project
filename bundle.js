@@ -8381,8 +8381,8 @@ function AYLIENTextAPI(options) {
 module.exports = AYLIENTextAPI;
 
 },{"./lib/apirequest":38,"./lib/util.js":39}],41:[function(require,module,exports){
-const APPLICATION_KEY = "1b955de3207750463ac95bd5481207ac";
-APPLICATION_ID = "f6a32887";
+const APPLICATION_KEY = /*"Insert KEY here";*/
+APPLICATION_ID = /*"Insert ID here";*/
 
 var myApp = angular.module('SummarizerExtension', ['ngRoute']);
 myApp.controller("PopupListController", function ($scope) {
