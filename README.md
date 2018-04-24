@@ -1,4 +1,4 @@
-####### Senior Project
+Senior Project
 
     A chrome extension providing the user text based analysis through Aylien API
   
