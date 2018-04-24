@@ -1,5 +1,5 @@
-const APPLICATION_KEY = "1b955de3207750463ac95bd5481207ac";
-APPLICATION_ID = "f6a32887";
+const APPLICATION_KEY = /*"Insert Key here";*/
+APPLICATION_ID = /*"Insert ID here";*/
 
 var myApp = angular.module('SummarizerExtension', ['ngRoute']);
 myApp.controller("PopupListController", function ($scope) {
