@@ -1,6 +1,7 @@
 Senior Project
 
-    A chrome extension providing the user text based analysis through Aylien API
+    A chrome extension providing the user text based analysis through Aylien API.
+  
   
     To Use:
       Sign up for aylien API and recieve key and ID
