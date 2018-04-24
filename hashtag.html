@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="HashtagSuggestion" ng-csp>
+<head>
+	<title>Hashtags</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+	<div class="container" id="main_container">
+		<div class="jumbotron">
+			<div class="navbar navbar-default navbar-fixed-top">
+				<ul class="nav nav-tabs">
+					<li id="home" class="active"><a href="popup.html">Home</a></li>
+					<li id="tag"><a href="hashtag.html">HashtagSuggestions</a></li>
+					<li id="keywords"><a href="keywords.html">Keywords</a></li>
+					<li id="cite"><a href="citations.html">Citations</a></li>
+					<li id="how"><a href="howto.html">How to Use</a></li>
+				</ul>
+			</div>
+			<br><br>
+		<br>
+		<div class="inputs">
+			<p>Suggested #Hashtags
+				<button type="button" class="btn btn-default" id="add_tag" title ="Populate Tags">Generate Additional #Tags</button>
+			</p>
+		</div>
+		<div class="ng-cloak">
+			<div class="loader"></div>
+			<div ng-controller="HashtagController" id="hashtag_container">
+				<ul id="tags">
+					<li id="hashtag" ng-repeat="hashtag in hashtags">
+						{{hashtag}}
+					</li>
+					<li id="hashtag" ng-repeat="hashtag in hashtags2">
+						{{hashtag}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="angular-route.min.js"></script>
+<script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>

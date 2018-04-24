@@ -1,0 +1,46 @@
+#main_container{
+  width: 600px;
+  min-width: 400px;
+  resize: horizontal;
+  overflow: auto;
+}
+
+#insert{
+  width: 400px;
+  min-width: 300px
+}
+
+#summary_container{
+  font-size: medium;
+  font-family: arial;
+}
+
+.navbar {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 20px;
+  background-color: #FDF5E6;
+}
+
+.loader {
+  margin-left: 200px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 110px;
+  height: 110px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#tags{
+  -webkit-column-count: 3;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}

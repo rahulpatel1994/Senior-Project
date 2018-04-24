@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SummarizerExtension" ng-csp>
+<head>
+	<title>Summarizer</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+	<div class="container" id="main_container">
+		<div class="jumbotron">
+			<div class="navbar navbar-default navbar-fixed-top">
+				<ul class="nav nav-tabs">
+					<li id="home" class="active"><a href="popup.html">Home</a></li>
+					<li id="tag"><a href="hashtag.html">HashtagSuggestions</a></li>
+					<li id="keywords"><a href="keywords.html">Keywords</a></li>
+					<li id="cite"><a href="citations.html">Citations</a></li>
+					<li id="how"><a href="howto.html">How to Use</a></li>
+				</ul>
+			</div>
+			<br><br><br>
+		<div class="input-group" id= "sentenceBar">
+			<input type="text" class="form-control" id="insert" placeholder="Enter Number of Sentences to be Summarized!"></input>
+			<button type="button" class="btn btn-default" id="search" title ="Search">
+				<i class="glyphicon glyphicon-search"></i>
+			</button>
+			<button type="button" class="btn btn-default" id="int_font" title ="increase font">
+				<i class="glyphicon glyphicon-zoom-in"></i>
+			</button>
+			<button type="button" class="btn btn-default" id="dec_font" title ="decrease font">
+				<i class="glyphicon glyphicon-zoom-out"></i>
+			</button>
+			<div class="inputs">
+				<!--button type="button" class="btn btn-default" id="int_font" title ="increase font">
+					<i class="glyphicon glyphicon-zoom-in"></i>
+				</button>
+				<button type="button" class="btn btn-default" id="dec_font" title ="decrease font">
+					<i class="glyphicon glyphicon-zoom-out"></i>
+				</button>
+				<button type="button" class="btn btn-default" id="schmalz_font" title ="TRUE SIGHT 9000!">Schmalz Eyes</button-->
+			</div>
+		</div>
+		<br>
+		<div class="ng-cloak">
+			<div class="loader"></div>
+			<div ng-controller="PopupListController" id="summary_container">
+				<ol id="list">
+					<li id="sentence" ng-repeat="sentence in sentences">
+						{{sentence}}
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="angular-route.min.js"></script>
+<script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>

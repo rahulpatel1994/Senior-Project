@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Condense the Web!",
+  "description": "Extension Performing text based analysis through Aylien API",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "new.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+   "scripts": ["bundle.js"]
+ },
+  "icons": {
+    "64" : "new.png"
+  },
+    "content_scripts" : [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["myScript.js"]
+    }
+  ],
+  "permissions": [
+  "tabs",
+  "<all_urls>",
+  "storage"
+  ]
+}
